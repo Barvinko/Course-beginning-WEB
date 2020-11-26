@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    font-size: 11pt;
+    box-sizing: border-box;
+}
+
+.container{
+    width: clamp(820px,80%,960px);
+    margin: auto;
+}
+
+.cell{
+    display: flex;
+    border: 1px solid rgb(212, 184, 184);
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.photo>img{
+    height: 100px;
+    display: inline-block;
+    margin: 0px;
+    transition: 0.5s;
+}
+
+.text{
+
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 55%;
+}
+
+h4{
+    font-size: 1.3em;
+    margin: 5px auto;
+}
+
+ul{
+    display: flex;
+    padding-left: 0;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+li{
+    margin: 0 15px;
+}
+
+ul>li:first-child{
+    list-style: none;
+    margin-left: -5px;
+}
+
+.text>div>div{
+    display: flex;
+}
+
+.text span:last-child{
+    margin-left: auto;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+    margin-right: 18px;
+}
+
+.cell:hover span:last-child{
+    color: black;
+    transition: 0.5s;
+}
+
+.cout-buy{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    width: 25%;
+    padding-right: 10px;
+}
+
+.cout-buy>*{
+    margin: 5px 2px;
+}
+
+.cout-buy>div:first-child{
+    color: orange;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.cout-buy>button{
+    background: orange;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.cout-buy>.changebut{
+    background: rgba(202, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+}
+
+.cell:hover .cout-buy>.changebut{
+    background: rgb(202, 0, 0) ;
+    color: white;
+    transition: 0.5s;
+}
+
+.cell:hover .photo>img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}

@@ -1,0 +1,87 @@
+h1{
+    color: green;
+}
+
+div>span:first-child{
+    color: red;
+}
+
+div>span:first-child + span{
+    background: yellow;
+}
+
+small[class="special"]{
+    color: orange;
+}
+
+div>span:last-child{
+    color: green;
+}
+
+a[href="#"]{
+    color: #0000FF; /* intial делает цвет по умолчанию, но он делает цвет по умолчанию не как для сылки, а как для всего текста, тоесть черный*/
+}
+
+a[href^="http"]{
+    color: green;
+}
+
+a[href^="http"]:visited{
+    color:green;
+}
+
+a[title]{
+    color: red;
+}
+
+a[title]:visited, a[href="http"]:last-of-type{
+    color: red;
+}
+
+p.my_class>b{
+    color: purple;
+}
+
+p.my_class>span:first-of-type{
+    color: blue;
+}
+
+p.my_class>span:first-of-type + span{
+    color: green;
+}
+
+ul>li:nth-child(odd){
+    color: red;
+}
+
+ul>li:nth-child(even){
+    background: yellow;
+}
+
+ul>li:last-child{
+    color: purple;
+}
+
+p.my_class + div + div{
+    color: pink;
+}
+
+ol>li:nth-child(odd){
+    color: blue;
+}
+
+ol>li:nth-child(even){
+    color: green;
+}
+
+ol>li+li+li+li{
+    background-color: grey;
+}
+
+ol>li+li+li+li+li{
+    background-color: initial;
+}
+
+ol>li:last-child{
+    color: orange;
+}

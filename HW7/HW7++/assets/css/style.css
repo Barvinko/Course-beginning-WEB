@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70vw;
+    max-width: 960px;
+    min-width: 300px;
+    margin: auto;
+    padding: 0 12px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, main, footer{
+    margin: 12px;
+    padding: 12px;
+}
+
+header{
+    padding-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header>ul>li:first-child{
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+}
+
+main{
+    flex-grow: 1;
+    padding-top: 0;
+    font-size: 14px;
+}
+
+main>p{
+    color: rgba(0, 0, 0, 0.774);
+    font-family: 'EB Garamond', serif;
+}
+
+h4{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+}
+
+ul{
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+ul>li{
+    margin: 0 8px;
+}
+
+ul.first-list>li:first-child{
+    margin-right: auto;
+    margin-left: 0;
+}
+
+ul.last-list{
+    justify-content: center;
+    font-size: 14px;
+}
+
+p:first-of-type{
+    padding-bottom: 0;
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+main>h4, main>p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.component{
+    padding: 8px;
+    box-shadow: 0 0 5px rgb(14, 171, 243);
+    color: rgba(0, 0, 0, 0.507);
+    font-style: italic;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.gallery > .block{
+    flex-basis: calc(100% / 2.2);
+    margin-top: 10px;
+}
+
+p{
+    text-align: justify;
+    padding: 5px 15px;
+}
+
+.block{
+    width: 300px;
+    box-shadow: 0 0 9px rgb(117, 117, 226);
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 2px;
+}
+
+div.Glasses>div.date{
+
+    background: rgb(238, 247, 252);
+    margin: 0;
+    font-size: 24px;
+    padding: 10px;
+}
+
+div.Glasses:hover{
+    height: auto;
+}
+
+.Glasses>img{
+    max-width: 100%;
+}
+
+div.Glasses h1{
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+}
+
+div.Glasses>p{
+    height: 85px;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.452);
+    margin: 5px ;
+}
+
+div.Glasses>p:hover{
+    height: auto;
+}
+
+#last-div{
+    background: black;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: -1px;
+}
+
+.Glasheart{
+    float: right;
+    border: none;
+    background: black;
+    color: white;
+}
+
+.starts{
+    color: orange;
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: inherit;
+}

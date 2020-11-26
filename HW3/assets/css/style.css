@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+main{
+    width: 600px;
+    background: linear-gradient(125deg, rgb(54,81,217),
+    rgb(207,56,148));
+    padding: 5px 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+}
+
+.prime{
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 0px 0px 10px white;
+}
+
+.picture{
+    height: 363px;
+    background-size: cover;
+    background-image: url(../img/hiclipart.com.png);
+}
+
+button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    padding: 5px 10px;
+    margin: 5px;
+    box-shadow: 0px 0px 4px 1px rgb(31, 31, 228);
+}
+
+.button1{
+    background-color: rgb(75, 133, 199);
+    margin-left: 0;
+}
+
+.button2{
+    background-color: orangered ;
+}
+

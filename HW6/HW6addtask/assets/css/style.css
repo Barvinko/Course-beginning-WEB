@@ -1,0 +1,119 @@
+img{
+    max-width: 100%;
+    display: block;
+}
+
+body{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+main{
+    margin: auto;
+    width: 50vw;
+    min-width: 650px;
+    margin-top: 5vh;
+}
+
+p{
+    text-align: justify;
+    padding: 5px 15px;
+}
+
+.block{
+    width: 300px;
+    box-shadow: 0 0 9px rgb(117, 117, 226);
+    float: left;
+    text-align: center;
+    height: 480px;
+    box-sizing: border-box;
+}
+
+div.Glasses>div.date{
+
+    background: rgb(238, 247, 252);
+    margin: 0;
+    font-size: 24px;
+    padding: 10px;
+}
+
+div.Glasses:hover{
+    height: auto;
+}
+
+div.Glasses h1{
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+}
+
+div.Glasses>p{
+    height: 85px;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.452);
+    margin-top: 0;
+}
+
+div.Glasses>p:hover{
+    height: auto;
+}
+
+#last-div{
+    background: black;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: -1px;
+}
+
+.Glasheart{
+    float: right;
+    border: none;
+    background: black;
+    color: white;
+}
+
+.starts{
+    color: orange;
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: inherit;
+}
+
+.Cup{
+    float: right;
+    padding: 10px;
+    text-align: left;
+}
+
+div.Cup h1{
+    font-size: 18px;
+}
+
+.cost{
+    color: brown;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.cross{
+    text-decoration: line-through;
+    color: rgb(153, 115, 115);
+}
+
+div.Cup button{
+    padding: 5px 8px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 3px;
+}
+
+.addcart{
+    background: black;
+    color: white;
+
+}
