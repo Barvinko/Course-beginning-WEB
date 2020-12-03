@@ -1,0 +1,73 @@
+html{
+    font-size: 10pt;
+}
+
+.info{
+    grid-area: info;
+}
+
+.number1{
+    grid-area: num1;
+}
+
+.number2{
+    grid-area: num2;
+}
+
+.number3{
+    grid-area: num3;
+}
+
+.about{
+    grid-area: about;
+}
+
+.gridbox{
+    box-shadow: 0px 0px 10px rgb(67, 171, 206);
+    min-width: 520px;
+    max-width: 768px;
+    height: 400px;
+    margin: auto;
+    background: rgb(244, 242, 245);
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas: "info num1 num2 num3"
+                         "info about about about";
+}
+
+.siting{
+    min-height: 100vh;
+}
+
+main > div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgb(167, 194, 202);
+    background: white;
+    color: rgba(0, 0, 0, 0.508);
+}
+
+main>div>div{
+    margin: auto;
+}
+
+.foto{
+    background-image: url(../LZn7W92m_400x400.jpg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+h3{
+    color: rgba(213, 20, 20, 0.576);
+}
+
+h5{
+    color: black1;
+}
