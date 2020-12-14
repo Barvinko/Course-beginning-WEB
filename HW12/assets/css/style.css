@@ -1,0 +1,220 @@
+body{
+   
+}
+
+body>.container>*{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+
+li>a{
+    text-decoration: none;
+    color: black;
+}
+
+header li{
+    border-right: 1px solid rgba(0, 0, 0, 0.131);
+}
+
+header a{
+    color: rgba(0, 0, 0, 0.500);
+    transition: 0.3s;
+}
+
+header a:hover{
+    color: black;
+}
+
+li{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+main ul.navbar-nav{
+    flex-direction: row;
+}
+
+main li>a{
+    color: rgba(255, 255, 255, 0.515);
+    transition: 0.3s;
+}
+
+main li>a:hover{
+    color: white;
+}
+
+.main-c{
+    grid-area: main;;
+}
+
+.bag-c{
+    grid-area: bag;
+    background: url(../img/bag.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.watch-c{
+    grid-area: watch;
+    background: url(../img/watch.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.shoes-c{
+    grid-area: shoes;
+    background: url(../img/shoes.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.producs-c{
+    grid-area: producs;
+}
+
+.contact-c{
+    grid-area: contact;
+}
+
+.gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 0.5fr 2fr 0.3fr;
+    grid-gap: 10px;
+    grid-template-areas: "main main main"
+                         "bag watch shoes"
+                         "producs producs producs"
+                         "contact contact contact";
+}
+
+.bag-c, .watch-c, .shoes-c{
+    position: relative;
+} 
+
+.to-down{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+    color: white;
+}
+
+.to-down a{
+    text-decoration: none;
+    color: white;
+}
+
+.to-down a:hover{
+    text-decoration: underline;
+}
+
+.product{
+    flex-basis: calc(100% / 4);
+    padding: 10px;
+    margin-top: 60px;
+
+}
+
+.contact{
+    width: 400px;
+}
+
+.cell-information{
+    grid-area: information;
+}
+
+.cell-customer{
+    grid-area: customer;
+}
+
+.cell-extras{
+    grid-area: extras;
+}
+
+.cell-account{
+    grid-area: account;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "information customer extras account";
+}
+
+footer ul{
+    padding-left: 10px;
+    display: block;
+}
+
+footer li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.268);
+    padding-left: 0;
+    padding-bottom: 5px;
+}
+
+footer li:first-child{
+    border: none
+}
+
+footer li:last-child{
+    border: none;
+}
+
+footer li a{
+    color: rgba(0, 0, 0, 0.500);
+    transition: 0.3s;
+}
+
+footer a:hover{
+    color: black;
+}
+
+
+
+@media (max-width: 768px){
+
+    .gridbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.25fr 0.17fr 0.17fr 0.17fr 2fr 0.1fr;
+        grid-gap: 10px;
+        grid-template-areas: "main main main"
+                             "bag bag bag"
+                             "watch watch watch"
+                             "shoes shoes shoes"
+                             "producs producs producs"
+                             "contact contact contact";
+    }
+
+    .product{
+        flex-basis: calc(100% / 2);
+        padding: 10px;
+        margin-top: 60px;
+    
+    }
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas: "information customer"
+                             "extras account";
+    }
+
+    header ul{
+        flex-direction: column;
+    }
+
+    header li{
+        border-right: none;
+    }
+
+    main ul.navbar-nav{
+        flex-wrap: wrap;
+    }
+}
