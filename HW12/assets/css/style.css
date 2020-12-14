@@ -119,6 +119,8 @@ main li>a:hover{
 
 .contact{
     width: 400px;
+    border-right: 1px solid rgba(0, 0, 0, 0.200);
+    border-left: 1px solid rgba(0, 0, 0, 0.200);
 }
 
 .cell-information{
@@ -216,5 +218,13 @@ footer a:hover{
 
     main ul.navbar-nav{
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px){
+    .contact{
+        width: auto;
+        border-right: none;
+        border-left: none;
     }
 }
