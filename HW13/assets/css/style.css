@@ -1,0 +1,31 @@
+header li a{
+    border-right: 1px solid rgba(0, 0, 0, 0.186);
+    padding: 0 8px !important;
+}
+
+header li{
+    padding: 8px 0;
+}
+
+.border-right-0{
+    border-right: 0 !important;
+}
+
+
+main {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.788);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+}
+
+#telefone:valid + small{
+    display: none;
+}
+
+#telefone:invalid + small + small{
+    display: none;
+}
+
