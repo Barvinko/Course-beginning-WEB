@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="./assets/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/fa/css/all.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<title>Депозитный калькулятор</title>
+	<script src="./assets/js/main.js"></script>
+	
+  </head>
+  <body>
+
+	<div class="container d-flex">
+		<main class="m-auto mt-5">	
+			<h1 class="">
+				Индекс массы тела
+			</h1>
+
+			<div class="mb-2 mt-4">
+				<label for="height">Ваш рост (м):</label>
+				<input oninput="calc()" type="text" id="setheight">
+			</div>
+
+			<div>
+				<label for="weight">Ваш вес (кг): </label>				
+				<input oninput="calc()" type="text" id="setweight">
+			</div>
+
+			<h3 class="mt-4">Ваш индекс: <output id="getindex"></output></h3>
+			<h5 class="mt-2 ml-0"><output id="getdefinition"></output></h5>
+			</main>
+
+	</div>
+   
+	<!-- <div class="container mt-5">
+		
+		<h1 class="mb-4">Депозитный калькулятор</h1>
+	
+		<div class='row row-cols-1 row-cols-lg-4 my-4'>
+			<div class="form-group">
+			  <label for="sumInput">Сумма вклада (грн.)</label>
+			  <input oninput="calc()" type="number" class="form-control" id="sumInput" 	min="1000" max="999999999" value="10000">
+			</div>
+
+			<div class="form-group">
+			  <label for="termInput">Срок вклада (мес.)</label>
+			  <input oninput="calc()" type="number" class="form-control" id="termInput" min="3" max="48" value="12">
+			</div> 
+
+			<div class="form-group">
+			  <label for="rateInput">Ставка (% годовых)</label>
+			  <input oninput="calc()" type="number" class="form-control" id="rateInput" min="1" max="100" value="12.00" step='0.01'>
+			</div>
+
+			<div class="form-group">
+				<label for="capInput">Капитализация %</label>
+				<input oninput="calc()" class='d-block mt-1' style='width:32px;height:32px;' type="checkbox" id="capInput">	
+			</div>
+
+			
+
+		</div>
+		  
+		  <button onclick="calc()" class="btn btn-primary w-100">Рассчитать</button>
+		
+
+				
+		<h3 class='my-4'>По завершению депозита вы получите: <output id="resultPlace">-</output> грн.</h3>
+
+	</div> -->
+   
+  </body>
+</html>
