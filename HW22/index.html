@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="./assets/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/fa/css/all.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<title>Game</title>
+	<script src="./assets/js/main.js"></script>
+	
+  </head>
+  <body>
+
+	<div class="container d-flex">
+		<main class="m-auto mt-5">	
+			<h1 class="d-inline-block fw-bold">
+				Угадайте число
+			</h1>
+			<h2 class="mt-4">
+				Раунд: <output id="round"></output>
+			</h2>
+
+			<div class="mb-2 mt-2">
+				<label for="height">Введите число(1-100):</label>
+				<input type="text" id="setnumber">
+			</div>
+
+			<div class="mt-1 row-sm d-inline-block">
+				<button onclick="play()" type="button" class="col mt-2 btn btn-dark fs-4" id="play">Сравнить</button>
+				<button onclick="restart()" type="button" class="col mt-2 btn btn-dark fs-4" id="restart">Начать с начала</button>
+			</div>
+
+			<h3 class="mt-4">Ваше число <output id="getanswer"></output></h3>
+
+			<dialog id="dialog">
+				<h1 id="dialogH1"></h1>
+				<h3 id="getsecret"></output></h3>
+				<button onclick="dialog.close(), restart()" type="button" class="mt-2 btn btn-dark fs-4" id="close">OK</button>
+			</dialog>
+	</div>   
+  </body>
+</html>

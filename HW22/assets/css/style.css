@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-Regular.woff2');
+}
+
+body {
+    font-family: 'JetBrains Mono' !important;
+    margin: 0;
+}
+main{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.788);
+    padding: 20px;
+}
