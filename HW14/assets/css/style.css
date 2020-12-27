@@ -112,6 +112,8 @@ main li>a:hover{
 
 .contact{
     width: 400px;
+    border-right: 1px solid rgba(0, 0, 0, 0.200);
+    border-left: 1px solid rgba(0, 0, 0, 0.200);
 }
 
 .cell-information{
