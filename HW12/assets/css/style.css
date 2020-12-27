@@ -176,7 +176,6 @@ footer a:hover{
 }
 
 
-
 @media (max-width: 768px){
 
     .gridbox{
@@ -223,7 +222,7 @@ footer a:hover{
 
 @media (max-width: 576px){
     .contact{
-        width: auto;
+        width: 100%;
         border-right: none;
         border-left: none;
     }

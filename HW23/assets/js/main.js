@@ -25,7 +25,7 @@ function to_c() {
             let t = i.innerHTML; 
             console.log(t);
             t = parseInt(t);
-            t = (t - 273.15) ;
+            t = (t - 273) ;
             t = Math.round(t);
             i.innerHTML = `${t}°C`;
             console.log(i.innerHTML);
@@ -60,7 +60,7 @@ function to_f() {
             let t = i.innerHTML; 
             console.log(t);
             t = parseInt(t);
-            t = (t - 273.15) * 1.8 + 32;
+            t = (t - 273) * 1.8 + 32;
             t = Math.round(t);
             i.innerHTML = `${t}°F`;
             console.log(i.innerHTML);
@@ -84,7 +84,7 @@ function to_k() {
             let t = i.innerHTML; 
             console.log(t);
             t = parseInt(t);
-            t = t + 273.15;
+            t = t + 273;
             t = Math.round(t);
             i.innerHTML = `${t}°K`;
             console.log(i.innerHTML);
@@ -95,7 +95,7 @@ function to_k() {
             let t = i.innerHTML; 
             console.log(t);
             t = parseInt(t);
-            t = (t - 32) / 1.8 + 273.15;
+            t = (t - 32) / 1.8 + 273;
             t = Math.round(t);
             i.innerHTML = `${t}°K`;
             console.log(i.innerHTML);
