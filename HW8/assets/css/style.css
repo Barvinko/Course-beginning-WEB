@@ -120,6 +120,6 @@ ul>li:first-child{
 }
 
 .cell:hover .photo>img{
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(25deg);
     transition: 0.5s;
 }
